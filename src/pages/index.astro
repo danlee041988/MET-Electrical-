@@ -130,80 +130,59 @@ import { Icon } from 'astro-icon/components';
         <p class="text-xl text-white/70">Professional electrical work across Somerset. From emergencies to full installations.</p>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         <!-- Emergency Services -->
-        <div>
-          <div class="bg-red-600/10 border border-red-600/20 rounded-2xl p-8">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center">
-                <Icon name="tabler:alert-circle" class="w-8 h-8 text-white" />
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-red-400">Emergency Repairs</h3>
-                <p class="text-red-200">When you need help now</p>
-              </div>
+        <div class="bg-red-600/10 border border-red-600/20 rounded-xl p-6 hover:border-red-400/30 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Icon name="tabler:alert-circle" class="w-6 h-6 text-red-400" />
             </div>
-            <ul class="space-y-3 text-white/80">
-              <li class="flex items-start gap-3">
-                <Icon name="tabler:bolt" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                Power outages and electrical faults
-              </li>
-              <li class="flex items-start gap-3">
-                <Icon name="tabler:flame" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                Burning smells and sparking sockets
-              </li>
-              <li class="flex items-start gap-3">
-                <Icon name="tabler:tools" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                Tripping circuit breakers and RCDs
-              </li>
-            </ul>
-            <div class="mt-6">
-              <a href="tel:07464336661" class="btn bg-red-600 text-white hover:bg-red-700 w-full text-center">
-                <Icon name="tabler:phone" class="w-5 h-5 mr-2" />
-                Emergency Call: 07464 336661
-              </a>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-red-400">Emergency Repairs</h4>
+              <p class="text-white/70 text-sm mb-3">24/7 emergency call-outs for urgent electrical issues.</p>
+              <a href="tel:07464336661" class="text-red-400 hover:text-white text-sm font-medium">Call 07464 336661 →</a>
             </div>
           </div>
         </div>
 
-        <!-- Regular Services -->
-        <div class="space-y-6">
-          <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-brand-yellow/30 transition-colors">
-            <div class="flex items-start gap-4">
-              <div class="bg-brand-blue/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Icon name="tabler:clipboard-list" class="w-6 h-6 text-brand-blue" />
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold mb-2">EICR Testing & Certificates</h4>
-                <p class="text-white/70 text-sm mb-3">Landlord compliance made simple. Same-day certificates available.</p>
-                <a href="/services/eicr" class="text-brand-yellow hover:text-white text-sm font-medium">Learn more →</a>
-              </div>
+        <!-- EICR Testing -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-brand-yellow/30 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="bg-brand-blue/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Icon name="tabler:clipboard-list" class="w-6 h-6 text-brand-blue" />
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">EICR Testing & Certificates</h4>
+              <p class="text-white/70 text-sm mb-3">Landlord compliance made simple. Same-day certificates available.</p>
+              <a href="/services/eicr" class="text-brand-yellow hover:text-white text-sm font-medium">Learn more →</a>
             </div>
           </div>
+        </div>
 
-          <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-brand-yellow/30 transition-colors">
-            <div class="flex items-start gap-4">
-              <div class="bg-brand-blue/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Icon name="tabler:device-tv" class="w-6 h-6 text-brand-blue" />
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold mb-2">Consumer Unit Upgrades</h4>
-                <p class="text-white/70 text-sm mb-3">Modern safety with RCBOs and surge protection.</p>
-                <a href="/services/consumer-units" class="text-brand-yellow hover:text-white text-sm font-medium">Learn more →</a>
-              </div>
+        <!-- Consumer Unit Upgrades -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-brand-yellow/30 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="bg-brand-blue/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Icon name="tabler:device-tv" class="w-6 h-6 text-brand-blue" />
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">Consumer Unit Upgrades</h4>
+              <p class="text-white/70 text-sm mb-3">Modern safety with RCBOs and surge protection.</p>
+              <a href="/services/consumer-units" class="text-brand-yellow hover:text-white text-sm font-medium">Learn more →</a>
             </div>
           </div>
+        </div>
 
-          <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-brand-yellow/30 transition-colors">
-            <div class="flex items-start gap-4">
-              <div class="bg-brand-blue/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Icon name="tabler:bulb" class="w-6 h-6 text-brand-blue" />
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold mb-2">Complete Rewiring & Lighting</h4>
-                <p class="text-white/70 text-sm mb-3">Full rewires, lighting design, and EV charger installation.</p>
-                <a href="/services" class="text-brand-yellow hover:text-white text-sm font-medium">View all services →</a>
-              </div>
+        <!-- Complete Rewiring & Lighting -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-brand-yellow/30 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="bg-brand-blue/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Icon name="tabler:bulb" class="w-6 h-6 text-brand-blue" />
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">Complete Rewiring & Lighting</h4>
+              <p class="text-white/70 text-sm mb-3">Full rewires, lighting design, and EV charger installation.</p>
+              <a href="/services" class="text-brand-yellow hover:text-white text-sm font-medium">View all services →</a>
             </div>
           </div>
         </div>
