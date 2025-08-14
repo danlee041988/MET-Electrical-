@@ -7,18 +7,20 @@ export default {
     extend: {
       colors: {
         brand: {
-          // Colors extracted from the MET Electrical logo
-          blue: '#2DD4BF',      // Bright turquoise/cyan from bottom leaf
-          green: '#4AE54A',     // Bright green from middle leaf  
-          amber: '#D4A574',     // Golden amber from top leaf
-          yellow: '#D4A574',    // Alias for amber (for existing code compatibility)
-          dark: '#0b1b2b',      // Keep existing dark background
-          gray: '#9CA3AF',      // For secondary text elements
+          // Professional electrical cable colors for clean, professional look
+          blue: '#1E3A8A',      // Deep blue (neutral wire) - professional and trustworthy
+          green: '#22C55E',     // Safety green (earth wire) - safety and reliability
+          amber: '#F59E0B',     // Warning amber - attention and energy
+          yellow: '#F59E0B',    // Alias for amber (for existing code compatibility)
+          brown: '#8B4513',     // Brown (live wire) - warm and dependable
+          gray: '#6B7280',      // Professional gray - clean and modern
+          dark: '#1F2937',      // Professional dark - clean background
           
-          // Accent variations for better design flexibility
-          'blue-light': '#7DD3FC',   // Lighter blue for hover states
-          'green-light': '#86EFAC',  // Lighter green for backgrounds
+          // Light variations for better design flexibility
+          'blue-light': '#3B82F6',   // Lighter blue for hover states
+          'green-light': '#4ADE80',  // Lighter green for backgrounds  
           'amber-light': '#FCD34D',  // Lighter amber for highlights
+          'gray-light': '#9CA3AF',   // Lighter gray for secondary elements
         },
       },
     },
