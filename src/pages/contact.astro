@@ -1,0 +1,114 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+---
+<Layout title="Contact | MET Electrical" description="Get a quote or speak to an electrician. Based in Shepton Mallet, serving Somerset.">
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-3xl md:text-4xl font-bold">Contact us</h1>
+    <p class="mt-2 text-white/70">Fast quotes · Same‑day emergencies where possible</p>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-8">
+      <form class="space-y-4" netlify netlify-honeypot="bot-field" action="/thank-you">
+        <!-- Hidden honeypot field for spam protection -->
+        <div style="display: none;">
+          <label>Don't fill this out: <input name="bot-field" /></label>
+        </div>
+        
+        <div>
+          <label class="block text-sm mb-1">Name</label>
+          <input class="w-full px-4 py-3 rounded-md bg-white text-black" name="name" required />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm mb-1">Phone</label>
+            <input class="w-full px-4 py-3 rounded-md bg-white text-black" name="phone" required />
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Email</label>
+            <input type="email" class="w-full px-4 py-3 rounded-md bg-white text-black" name="email" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Postcode</label>
+          <input class="w-full px-4 py-3 rounded-md bg-white text-black" name="postcode" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Service needed</label>
+          <select class="w-full px-4 py-3 rounded-md bg-white text-black" name="service">
+            <option>EICR</option>
+            <option>Consumer unit upgrade</option>
+            <option>Fault finding</option>
+            <option>Rewire (full/partial)</option>
+            <option>Lighting</option>
+            <option>EV charger install</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Brief description</label>
+          <textarea rows="4" class="w-full px-4 py-3 rounded-md bg-white text-black" name="message"></textarea>
+        </div>
+        <div class="flex gap-3">
+          <button type="submit" class="btn-primary">Request a quote</button>
+          <a href="https://wa.me/447464336661?text=Hi%20MET%20Electrical%2C%20I%27d%20like%20a%20quote" class="btn bg-green-600 text-white hover:bg-green-500">WhatsApp</a>
+        </div>
+      </form>
+      <aside class="space-y-6">
+        <div class="space-y-3">
+          <div class="text-white/80">Phone: <a class="underline" href="tel:07464336661">07464 336661</a></div>
+          <div class="text-white/80">Email: <a class="underline" href="mailto:info@metelectrical.co.uk">info@metelectrical.co.uk</a></div>
+          <div class="text-white/80">Based in Shepton Mallet · Serving: Taunton, Yeovil, Bridgwater, Frome, Wells, Glastonbury & nearby</div>
+        </div>
+
+        <!-- Service Area Map -->
+        <div class="bg-white/5 rounded-lg p-4 border border-white/10">
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <Icon name="tabler:map-pin" class="w-5 h-5 text-brand-yellow" />
+            Our Service Area
+          </h3>
+          <div class="aspect-video rounded-lg overflow-hidden">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79365.89089654935!2d-2.6542857!3d51.1906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48722b3b2b0e3661%3A0x508f2ad2b3b7a1a0!2sShepton%20Mallet%2C%20UK!5e0!3m2!1sen!2suk!4v1640000000000!5m2!1sen!2suk"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="MET Electrical Service Area - Somerset"
+              class="rounded-lg">
+            </iframe>
+          </div>
+          <p class="text-xs text-white/60 mt-2">Covering Somerset including Taunton, Yeovil, Bridgwater, Frome, Wells, and Glastonbury</p>
+        </div>
+
+        <!-- Service Hours -->
+        <div class="bg-white/5 rounded-lg p-4 border border-white/10">
+          <h4 class="font-semibold mb-3 flex items-center gap-2">
+            <Icon name="tabler:clock" class="w-5 h-5 text-brand-yellow" />
+            Service Hours
+          </h4>
+          <div class="space-y-2 text-sm text-white/80">
+            <div class="flex justify-between">
+              <span>Monday - Friday:</span>
+              <span>8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Saturday:</span>
+              <span>9:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Sunday:</span>
+              <span>Emergency only</span>
+            </div>
+            <div class="mt-3 pt-3 border-t border-white/20">
+              <div class="text-xs text-white/60">
+                Emergency call-outs available 24/7
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+</Layout>
+

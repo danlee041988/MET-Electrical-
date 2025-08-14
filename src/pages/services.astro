@@ -1,0 +1,232 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+---
+<Layout title="Electrical Services | MET Electrical" description="Professional electrical services in Somerset including EICR testing, consumer unit upgrades, fault finding, rewires, lighting, EV chargers and more.">
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold">Our Electrical Services</h1>
+      <p class="mt-4 text-white/70 max-w-2xl mx-auto">Professional, reliable electrical services across Somerset. From emergency repairs to complete rewires, we're here to help.</p>
+    </div>
+
+    <!-- Main Services Grid -->
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <!-- EICR Testing -->
+      <div class="rounded-lg bg-white/5 p-6 border border-white/10 hover:border-brand-yellow/30 transition">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="tabler:clipboard-list" class="w-8 h-8 text-brand-yellow" />
+          <h3 class="text-xl font-semibold">EICR Testing</h3>
+        </div>
+        <p class="text-white/70 mb-4">Electrical Installation Condition Reports for landlords and homeowners. Required every 5 years for rental properties.</p>
+        <ul class="text-sm text-white/60 space-y-1 mb-4">
+          <li>• Comprehensive safety inspections</li>
+          <li>• Full certification provided</li>
+          <li>• Landlord compliance</li>
+          <li>• Same-day reports available</li>
+        </ul>
+        <a href="/services/eicr" class="btn-primary text-sm">Learn More</a>
+      </div>
+
+      <!-- Consumer Unit Upgrades -->
+      <div class="rounded-lg bg-white/5 p-6 border border-white/10 hover:border-brand-yellow/30 transition">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="tabler:desktop" class="w-8 h-8 text-brand-yellow" />
+          <h3 class="text-xl font-semibold">Consumer Unit Upgrades</h3>
+        </div>
+        <p class="text-white/70 mb-4">Modern, safer electrical protection with RCBOs and surge protection devices.</p>
+        <ul class="text-sm text-white/60 space-y-1 mb-4">
+          <li>• Enhanced safety features</li>
+          <li>• RCBOs & SPD installation</li>
+          <li>• Tidy, professional work</li>
+          <li>• Full certification</li>
+        </ul>
+        <a href="/services/consumer-units" class="btn-primary text-sm">Learn More</a>
+      </div>
+
+      <!-- Fault Finding -->
+      <div class="rounded-lg bg-white/5 p-6 border border-white/10 hover:border-brand-yellow/30 transition">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="tabler:search" class="w-8 h-8 text-brand-yellow" />
+          <h3 class="text-xl font-semibold">Fault Finding & Repairs</h3>
+        </div>
+        <p class="text-white/70 mb-4">Quick diagnosis and safe repairs for electrical faults and circuit problems.</p>
+        <ul class="text-sm text-white/60 space-y-1 mb-4">
+          <li>• Rapid fault diagnosis</li>
+          <li>• Same-day emergencies</li>
+          <li>• Tripping circuit fixes</li>
+          <li>• Professional repairs</li>
+        </ul>
+        <a href="/services/fault-finding" class="btn-primary text-sm">Learn More</a>
+      </div>
+
+      <!-- Rewires -->
+      <div class="rounded-lg bg-white/5 p-6 border border-white/10 hover:border-brand-yellow/30 transition">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="tabler:plug" class="w-8 h-8 text-brand-yellow" />
+          <h3 class="text-xl font-semibold">Rewires</h3>
+        </div>
+        <p class="text-white/70 mb-4">Complete or partial rewiring for older properties with outdated electrical systems.</p>
+        <ul class="text-sm text-white/60 space-y-1 mb-4">
+          <li>• Full house rewires</li>
+          <li>• Partial circuit updates</li>
+          <li>• Modern cable installation</li>
+          <li>• Minimal disruption</li>
+        </ul>
+        <a href="/services/rewires" class="btn-primary text-sm">Learn More</a>
+      </div>
+
+      <!-- Lighting -->
+      <div class="rounded-lg bg-white/5 p-6 border border-white/10 hover:border-brand-yellow/30 transition">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="tabler:bulb" class="w-8 h-8 text-brand-yellow" />
+          <h3 class="text-xl font-semibold">Lighting Solutions</h3>
+        </div>
+        <p class="text-white/70 mb-4">Indoor, outdoor, security and garden lighting installation and design.</p>
+        <ul class="text-sm text-white/60 space-y-1 mb-4">
+          <li>• LED lighting upgrades</li>
+          <li>• Security lighting</li>
+          <li>• Garden illumination</li>
+          <li>• Smart lighting systems</li>
+        </ul>
+        <a href="/services/lighting" class="btn-primary text-sm">Learn More</a>
+      </div>
+
+      <!-- EV Chargers -->
+      <div class="rounded-lg bg-white/5 p-6 border border-white/10 hover:border-brand-yellow/30 transition">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="tabler:car" class="w-8 h-8 text-brand-yellow" />
+          <h3 class="text-xl font-semibold">EV Charger Installation</h3>
+        </div>
+        <p class="text-white/70 mb-4">Electric vehicle charging point installation for your home or business.</p>
+        <ul class="text-sm text-white/60 space-y-1 mb-4">
+          <li>• Home charging points</li>
+          <li>• Commercial installations</li>
+          <li>• Grant scheme assistance</li>
+          <li>• All major brands</li>
+        </ul>
+        <a href="/services/ev-chargers" class="btn-primary text-sm">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="bg-white/5 rounded-lg p-8 border border-white/10">
+      <h2 class="text-2xl font-bold mb-6">Additional Services</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-brand-yellow">Safety & Compliance</h3>
+          <ul class="space-y-2 text-white/80">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> Smoke & heat alarm installation</li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> Surge protection devices</li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> Earthing & bonding updates</li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> PAT testing services</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-brand-yellow">Project Work</h3>
+          <ul class="space-y-2 text-white/80">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> New kitchen installations</li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> Bathroom electrical work</li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> Home extensions</li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-brand-yellow"></span> Commercial installations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="mt-16 text-center">
+      <h2 class="text-2xl font-bold mb-8">Why Choose MET Electrical</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6">
+          <Icon name="tabler:certificate" class="w-12 h-12 text-brand-yellow mx-auto mb-4" />
+          <h3 class="font-semibold mb-2">Fully Qualified</h3>
+          <p class="text-white/70 text-sm">18th Edition qualified, NAPIT & TrustMark registered</p>
+        </div>
+        <div class="p-6">
+          <Icon name="tabler:clock" class="w-12 h-12 text-brand-yellow mx-auto mb-4" />
+          <h3 class="font-semibold mb-2">Same-Day Service</h3>
+          <p class="text-white/70 text-sm">Emergency call-outs and rapid response times</p>
+        </div>
+        <div class="p-6">
+          <Icon name="tabler:shield-check" class="w-12 h-12 text-brand-yellow mx-auto mb-4" />
+          <h3 class="font-semibold mb-2">Fully Insured</h3>
+          <p class="text-white/70 text-sm">Public liability insurance and transparent pricing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Gallery Section -->
+    <section class="mt-16">
+      <h2 class="text-2xl font-bold text-center mb-8">Our Professional Work</h2>
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <!-- Main featured image -->
+        <div class="md:col-span-2 rounded-lg overflow-hidden">
+          <img src="/Elec1.webp" alt="Professional electrician working on consumer unit" class="w-full h-64 md:h-80 object-cover" />
+        </div>
+        
+        <!-- Placeholder gallery items -->
+        <div class="space-y-4">
+          <div class="bg-white/5 rounded-lg border border-white/10 h-[calc(50%-8px)] flex items-center justify-center text-white/40">
+            <div class="text-center">
+              <Icon name="tabler:photo" class="w-8 h-8 mx-auto mb-2" />
+              <p class="text-xs">Consumer Unit</p>
+              <p class="text-xs">Upgrades</p>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-lg border border-white/10 h-[calc(50%-8px)] flex items-center justify-center text-white/40">
+            <div class="text-center">
+              <Icon name="tabler:photo" class="w-8 h-8 mx-auto mb-2" />
+              <p class="text-xs">Lighting</p>
+              <p class="text-xs">Installation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional gallery row -->
+      <div class="grid md:grid-cols-4 gap-4">
+        <div class="bg-white/5 rounded-lg border border-white/10 aspect-video flex items-center justify-center text-white/40">
+          <div class="text-center">
+            <Icon name="tabler:photo" class="w-6 h-6 mx-auto mb-1" />
+            <p class="text-xs">EICR Testing</p>
+          </div>
+        </div>
+        <div class="bg-white/5 rounded-lg border border-white/10 aspect-video flex items-center justify-center text-white/40">
+          <div class="text-center">
+            <Icon name="tabler:photo" class="w-6 h-6 mx-auto mb-1" />
+            <p class="text-xs">Rewiring</p>
+          </div>
+        </div>
+        <div class="bg-white/5 rounded-lg border border-white/10 aspect-video flex items-center justify-center text-white/40">
+          <div class="text-center">
+            <Icon name="tabler:photo" class="w-6 h-6 mx-auto mb-1" />
+            <p class="text-xs">EV Chargers</p>
+          </div>
+        </div>
+        <div class="bg-white/5 rounded-lg border border-white/10 aspect-video flex items-center justify-center text-white/40">
+          <div class="text-center">
+            <Icon name="tabler:photo" class="w-6 h-6 mx-auto mb-1" />
+            <p class="text-xs">Fault Finding</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-center text-white/60 text-sm mt-6">
+        Professional, tidy installations across Somerset. All work certified to current safety standards.
+      </p>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="mt-16 text-center bg-brand-blue/10 rounded-lg p-8 border border-brand-blue/20">
+      <h2 class="text-2xl font-bold mb-4">Need an Electrician?</h2>
+      <p class="text-white/70 mb-6 max-w-2xl mx-auto">Get a free quote for your electrical work. Same-day emergencies available across Somerset.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:07464336661" class="btn-primary">Call 07464 336661</a>
+        <a href="/contact" class="btn-secondary">Request Quote</a>
+        <a href="https://wa.me/447464336661?text=Hi%20MET%20Electrical%2C%20I%27d%20like%20a%20quote" class="btn bg-green-600 text-white hover:bg-green-500">
+          <Icon name="tabler:brand-whatsapp" class="w-5 h-5 mr-1" /> WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

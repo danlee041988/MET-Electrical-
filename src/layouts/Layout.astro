@@ -1,0 +1,187 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = 'MET Electrical', description = 'Local, reliable electricians — installation, testing, EV charging & more.' } = Astro.props;
+import '../assets/styles/tailwind.css';
+import { Icon } from 'astro-icon/components';
+---
+<html lang="en" class="bg-brand-dark text-white">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ElectricalContractor",
+      "name": "MET Electrical Services",
+      "description": "Professional electrical services in Somerset including EICR testing, consumer unit upgrades, fault finding, rewires, lighting, and EV charger installation.",
+      "url": "https://www.metelectrical.co.uk",
+      "logo": "https://www.metelectrical.co.uk/Logo.jpeg",
+      "image": "https://www.metelectrical.co.uk/Elec1.webp",
+      "telephone": "07464336661",
+      "email": "info@metelectrical.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Shepton Mallet",
+        "addressRegion": "Somerset",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.1906",
+        "longitude": "-2.5442"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Taunton"
+        },
+        {
+          "@type": "City", 
+          "name": "Yeovil"
+        },
+        {
+          "@type": "City",
+          "name": "Bridgwater"
+        },
+        {
+          "@type": "City",
+          "name": "Frome"
+        },
+        {
+          "@type": "City",
+          "name": "Wells"
+        },
+        {
+          "@type": "City",
+          "name": "Glastonbury"
+        },
+        {
+          "@type": "City",
+          "name": "Shepton Mallet"
+        }
+      ],
+      "serviceType": [
+        "EICR Testing",
+        "Consumer Unit Upgrades", 
+        "Electrical Fault Finding",
+        "Electrical Repairs",
+        "Full Rewires",
+        "Partial Rewires",
+        "Lighting Installation",
+        "EV Charger Installation",
+        "PAT Testing",
+        "Emergency Electrical Service"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "18th Edition Qualified (City & Guilds)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential", 
+          "name": "NAPIT Registered"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "TrustMark Registered"
+        }
+      ],
+      "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-17:00",
+      "priceRange": "££",
+      "paymentAccepted": ["Cash", "Bank Transfer", "Card"],
+      "currenciesAccepted": "GBP",
+      "founder": {
+        "@type": "Person",
+        "name": "Martin",
+        "jobTitle": "Qualified Electrician"
+      },
+      "sameAs": [
+        "https://wa.me/447464336661"
+      ]
+    }
+    </script>
+  </head>
+  <body class="min-h-dvh antialiased">
+    <header class="w-full bg-black text-white">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <a href="/" class="flex items-center gap-3">
+          <img src="/Logo.jpeg" alt="MET Electrical" class="h-24 md:h-32 w-auto" />
+          <span class="sr-only">MET Electrical</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-3">
+          <a href="/about" class="text-white/80 hover:text-white transition">About</a>
+          <a href="/services" class="text-white/80 hover:text-white transition">Services</a>
+          <a href="/faq" class="text-white/80 hover:text-white transition">FAQ</a>
+          <a href="/contact" class="text-white/80 hover:text-white transition">Contact</a>
+          <a href="tel:07464336661" class="btn-secondary">Call 07464 336661</a>
+          <a href="https://wa.me/447464336661?text=Hi%20MET%20Electrical%2C%20I%27d%20like%20a%20quote" class="btn bg-green-600 text-white hover:bg-green-500">
+            <Icon name="tabler:brand-whatsapp" class="w-5 h-5 mr-1" /> WhatsApp
+          </a>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="p-2 text-white hover:text-brand-yellow transition" aria-label="Toggle menu">
+            <Icon name="tabler:menu" class="w-6 h-6" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-black border-t border-white/10">
+        <nav class="max-w-6xl mx-auto px-4 py-4 space-y-4">
+          <a href="/about" class="block text-white/80 hover:text-white transition py-2">About</a>
+          <a href="/services" class="block text-white/80 hover:text-white transition py-2">Services</a>
+          <a href="/faq" class="block text-white/80 hover:text-white transition py-2">FAQ</a>
+          <a href="/contact" class="block text-white/80 hover:text-white transition py-2">Contact</a>
+          <a href="tel:07464336661" class="block btn-secondary text-center mb-2">Call 07464 336661</a>
+          <a href="https://wa.me/447464336661?text=Hi%20MET%20Electrical%2C%20I%27d%20like%20a%20quote" class="block btn bg-green-600 text-white hover:bg-green-500 text-center">
+            <Icon name="tabler:brand-whatsapp" class="w-5 h-5 mr-1" /> WhatsApp
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Emergency Banner -->
+    <div class="bg-red-600 text-white text-center py-2 px-4">
+      <div class="max-w-6xl mx-auto flex items-center justify-center gap-4 text-sm">
+        <Icon name="tabler:alert-circle" class="w-4 h-4 flex-shrink-0" />
+        <span class="font-medium">Electrical Emergency?</span>
+        <span class="hidden sm:inline text-red-100">Same-day response available</span>
+        <a href="tel:07464336661" class="bg-red-700 hover:bg-red-800 px-3 py-1 rounded font-medium transition">
+          Call 07464 336661
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+          }
+        });
+      }
+    </script>
+    <slot />
+  </body>
+</html>
+

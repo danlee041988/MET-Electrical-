@@ -1,0 +1,76 @@
+/* empty css                                 */
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_CGwnN-b5.mjs';
+import 'kleur/colors';
+import { $ as $$Layout, a as $$Icon } from '../chunks/Layout_DMJMLvGd.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Faq = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "FAQ & Resources | Electrical Help & Advice | MET Electrical", "description": "Frequently asked questions about electrical services, emergency procedures, and electrical safety advice for Somerset homeowners and landlords." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<main class="max-w-6xl mx-auto px-4 py-16"> <div class="text-center mb-12"> <h1 class="text-3xl md:text-4xl font-bold">FAQ & Resources</h1> <p class="mt-4 text-white/70 max-w-2xl mx-auto">Common questions about electrical services, safety advice, and useful resources for homeowners and landlords in Somerset.</p> </div> <!-- Emergency Section --> <div class="bg-red-600/20 border border-red-600/40 rounded-lg p-6 mb-12"> <div class="flex items-start gap-4"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:alert-circle", "class": "w-8 h-8 text-red-400 flex-shrink-0 mt-1" })} <div> <h2 class="text-xl font-bold text-red-300 mb-3">Electrical Emergency?</h2> <p class="text-red-200 mb-4">If you experience any of these issues, turn off the main power and call immediately:</p> <ul class="text-red-200 text-sm space-y-1 mb-4"> <li>• Burning smells from electrical equipment</li> <li>• Sparks or electrical arcing</li> <li>• Electric shocks from appliances</li> <li>• Complete power loss with no obvious cause</li> </ul> <a href="tel:07464336661" class="btn bg-red-600 text-white hover:bg-red-500"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:phone", "class": "w-4 h-4 mr-1" })}
+Emergency: 07464 336661
+</a> </div> </div> </div> <div class="grid lg:grid-cols-3 gap-12"> <!-- Main FAQ Content --> <div class="lg:col-span-2 space-y-8"> <!-- General Questions --> <section> <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:help", "class": "w-6 h-6 text-brand-yellow" })}
+General Questions
+</h2> <div class="space-y-4"> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+How quickly can you respond to emergencies?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>We aim to respond to electrical emergencies within 2 hours across our Somerset service area. For same-day non-emergency work, we typically respond within 4-6 hours. Planned work is usually scheduled for the next working day.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+What areas do you cover?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>We're based in Shepton Mallet and serve all of Somerset including Taunton, Yeovil, Bridgwater, Frome, Wells, Glastonbury and surrounding areas. Contact us to confirm coverage for your specific location.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+Do you provide written quotes?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Yes, all quotes are provided in writing with transparent pricing. We believe in no hidden costs and will explain exactly what work is required and why.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+Are you insured and qualified?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Yes, we're fully qualified (18th Edition City & Guilds), NAPIT registered, TrustMark registered, and carry full public liability insurance. DBS checks available on request.</p> </div> </details> </div> </section> <!-- EICR Questions --> <section> <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:clipboard-check", "class": "w-6 h-6 text-brand-yellow" })}
+EICR Testing
+</h2> <div class="space-y-4"> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+How often do landlords need an EICR?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Private rental properties must have a valid EICR renewed every 5 years, or upon change of tenancy if more than 5 years old. This is a legal requirement under The Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+How long does an EICR take?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Typically 2-4 hours for an average home, depending on size and complexity. Larger properties or those with complex electrical systems may take longer. We provide same-day certificates when possible.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+What happens if my EICR fails?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>We'll provide a detailed report of any issues found. Many problems can be fixed on the same visit, allowing for immediate re-certification. We'll explain all issues in plain English and provide cost estimates for any required work.</p> </div> </details> </div> </section> <!-- Consumer Unit Questions --> <section> <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:device-desktop", "class": "w-6 h-6 text-brand-yellow" })}
+Consumer Units
+</h2> <div class="space-y-4"> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+When should I upgrade my consumer unit?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Consider upgrading if you have an old fuse box with wire fuses, no RCD protection, frequent tripping, or a unit over 15 years old. Modern consumer units with RCBOs provide much better protection.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+What's the difference between RCDs and RCBOs?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>RCDs protect multiple circuits, while RCBOs provide individual protection per circuit. With RCBOs, if one circuit has a fault, only that circuit trips - not your entire home. This provides better convenience and safety.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+How long will I be without power during an upgrade?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Most consumer unit upgrades are completed in 4-6 hours. We work efficiently to minimize disruption and restore power as quickly as possible, usually the same day.</p> </div> </details> </div> </section> <!-- Safety Questions --> <section> <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:shield-check", "class": "w-6 h-6 text-brand-yellow" })}
+Electrical Safety
+</h2> <div class="space-y-4"> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+What should I do if my RCD keeps tripping?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Don't ignore it! First, unplug all appliances and try resetting. If it stays on, plug appliances back in one at a time to identify the faulty item. If it trips with nothing connected, call an electrician immediately as this indicates a wiring fault.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+Can I do electrical work myself?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Some basic work like changing light bulbs and replacing like-for-like accessories is allowed. However, most electrical work requires notification to Building Control and should be done by a qualified electrician for safety and legal compliance.</p> </div> </details> <details class="bg-white/5 rounded-lg border border-white/10"> <summary class="p-4 font-semibold cursor-pointer hover:bg-white/5 transition">
+How often should electrical installations be tested?
+</summary> <div class="px-4 pb-4 text-white/80 text-sm"> <p>Domestic properties: every 10 years for owner-occupied, 5 years for rentals. Commercial properties: every 5 years, or 3 years for high-risk environments. More frequent testing may be required for older installations.</p> </div> </details> </div> </section> </div> <!-- Sidebar --> <div class="space-y-6"> <!-- Quick Contact --> <div class="bg-brand-blue/10 rounded-lg p-6 border border-brand-blue/20"> <h3 class="text-xl font-bold mb-4">Still Have Questions?</h3> <p class="text-white/70 mb-4 text-sm">Get in touch for expert electrical advice.</p> <div class="space-y-3"> <a href="tel:07464336661" class="block w-full btn-primary text-center">Call 07464 336661</a> <a href="/contact" class="block w-full btn-secondary text-center">Contact Form</a> <a href="https://wa.me/447464336661?text=Hi%2C%20I%20have%20a%20question" class="block w-full btn bg-green-600 text-white hover:bg-green-500 text-center"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:brand-whatsapp", "class": "w-4 h-4 mr-1" })} WhatsApp
+</a> </div> </div> <!-- Useful Resources --> <div class="bg-white/5 rounded-lg p-6 border border-white/10"> <h4 class="font-semibold mb-4 flex items-center gap-2"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:external-link", "class": "w-5 h-5 text-brand-yellow" })}
+Useful Resources
+</h4> <ul class="space-y-3 text-sm"> <li> <a href="https://www.trustmark.org.uk" target="_blank" rel="noopener" class="text-brand-yellow hover:text-white transition underline">
+TrustMark - Government endorsed quality
+</a> </li> <li> <a href="https://www.napit.org.uk" target="_blank" rel="noopener" class="text-brand-yellow hover:text-white transition underline">
+NAPIT - National Association of Professional Inspectors
+</a> </li> <li> <a href="https://www.gov.uk/government/publications/electrical-safety-standards-in-the-private-rented-sector-guidance-for-landlords-tenants-and-local-authorities" target="_blank" rel="noopener" class="text-brand-yellow hover:text-white transition underline">
+GOV.UK - EICR guidance for landlords
+</a> </li> <li> <a href="https://www.electricalsafetyfirst.org.uk" target="_blank" rel="noopener" class="text-brand-yellow hover:text-white transition underline">
+Electrical Safety First
+</a> </li> </ul> </div> <!-- Emergency Checklist --> <div class="bg-red-600/10 rounded-lg p-6 border border-red-600/20"> <h4 class="font-semibold mb-4 flex items-center gap-2 text-red-300"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:alert-triangle", "class": "w-5 h-5" })}
+Emergency Checklist
+</h4> <ol class="space-y-2 text-sm text-red-200"> <li>1. Turn off main power at consumer unit</li> <li>2. Do not touch electrical equipment</li> <li>3. Evacuate if you smell burning</li> <li>4. Call emergency electrician</li> <li>5. Do not attempt repairs yourself</li> </ol> </div> <!-- Service Hours --> <div class="bg-white/5 rounded-lg p-6 border border-white/10"> <h4 class="font-semibold mb-4 flex items-center gap-2"> ${renderComponent($$result2, "Icon", $$Icon, { "name": "tabler:clock", "class": "w-5 h-5 text-brand-yellow" })}
+Service Hours
+</h4> <div class="space-y-2 text-sm text-white/80"> <div class="flex justify-between"> <span>Monday - Friday:</span> <span>8:00 AM - 6:00 PM</span> </div> <div class="flex justify-between"> <span>Saturday:</span> <span>9:00 AM - 5:00 PM</span> </div> <div class="flex justify-between"> <span>Sunday:</span> <span>Emergency only</span> </div> <div class="mt-3 pt-3 border-t border-white/10"> <div class="text-xs text-white/60">
+Emergency call-outs available 24/7
+</div> </div> </div> </div> </div> </div> </main> ` })}`;
+}, "/Users/danlee/CascadeProjects/met-electrical-website/src/pages/faq.astro", void 0);
+
+const $$file = "/Users/danlee/CascadeProjects/met-electrical-website/src/pages/faq.astro";
+const $$url = "/faq";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Faq,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
